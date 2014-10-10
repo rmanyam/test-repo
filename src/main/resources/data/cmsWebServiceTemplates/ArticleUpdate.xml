@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+	<article dbid="dbid">
+		<field name="HEADLINE">HEADLINE</field>
+		<field name="STANDFIRST">STANDFIRST</field>
+		<field name="BYLINEOVERRIDE">BYLINEOVERRIDE</field>
+		<field name="BYLINEDETAILS">BYLINEDETAILS</field>
+		<field name="BODY">
+			BODY
+		</field>
+	</article>
+</io>

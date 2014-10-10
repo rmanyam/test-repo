@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+    <article dbid="dbid">
+        <field name="columnistHeadline"></field>
+        <field name="columnistPushNotificationText"></field>
+        <field name="columnistPushNotificationCb"></field>
+    </article>
+</io>

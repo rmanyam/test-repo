@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+	<multimediaGroup type="image"
+		sourceid="UNIQUE_SOURCE_ID" source="Webservice Import"
+		name="Emperor Penguins" remove-version="all">
+		<description>Emperor Penguins</description>
+		<multimedia default="true" filename="emperor-penguins.jpeg" version='a'/>
+	</multimediaGroup>
+</io>	

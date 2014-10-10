@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+	<article source="WebserviceImport" sourceid="105997b4-7144-11e3-b398-d231fe12345"
+		type="standardArticle" state="published">
+		<section toDesk="desked" homeSection="true" name="Business" />
+		<field name="HEADLINE">Simple Article Test </field>
+		<field name="STANDFIRST">StandFirst </field>
+		<field name="BYLINEOVERRIDE">API Demo Author</field>
+		<field name="BYLINEDETAILS">Byline Details</field>
+		<field name="BODY">
+			<p>This is a demo article with min data </p>
+		</field>
+	</article>
+</io>

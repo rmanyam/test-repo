@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><io>
+	<multimediaGroup name="default name ar" remove-version="all" source="WebserviceImport" sourceid="1411486582994" type="image">
+		<description>default description ar</description>
+		<multimedia default="true" filename="large.jpg" version="a"/>
+	</multimediaGroup>
+</io>

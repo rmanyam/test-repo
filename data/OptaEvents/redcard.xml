@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2013 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a02.nexus.opta.net
+     production time:    20130819T205016,853Z
+     production module:  Opta::Feed::XML::Soccer::F7
+-->
+<SoccerFeed TimeStamp="20140213T215014+0100">
+  <SoccerDocument Type="Latest" uID="f694905">
+    <Competition uID="c8">
+      <Country>England</Country>
+      <Name>English Barclays Premier League</Name>
+      <Stat Type="season_id">2013</Stat>
+      <Stat Type="season_name">Season 2013/2014</Stat>
+      <Stat Type="symid">EN_PR</Stat>
+      <Stat Type="matchday">1</Stat>
+    </Competition>
+    <MatchData>
+      <MatchInfo MatchType="Regular" Period="SecondHalf" TimeStamp="20130819T210607+0100" Weather="Clear">
+        <Attendance>46842</Attendance>
+        <Date>20130819T200000+0100</Date>
+      </MatchInfo>
+      <MatchOfficial uID="o19485">
+        <OfficialData>
+          <OfficialRef Type="Main" />
+        </OfficialData>
+        <OfficialName>
+          <First>Andre</First>
+          <Last>Marriner</Last>
+        </OfficialName>
+      </MatchOfficial>
+      <Stat Type="match_time">90</Stat>
+      <TeamData Score="4" Side="Home" TeamRef="t43">
+        <PlayerLineUp>		
+		<!-- Player Lineup Removed from Test -->			
+        </PlayerLineUp>
+      </TeamData>
+      <TeamData Score="0" Side="Away" TeamRef="t4">
+        <Booking Card="Red" CardType="StraightRed" EventID="1385004012" EventNumber="14813" Period="FirstHalf" PlayerRef="p17974" Reason="Foul" Time="48" TimeStamp="20140213T204748+0100" uID="b4-4" />
+        <PlayerLineUp>
+		<!-- Player Lineup Removed from Test -->			
+        </PlayerLineUp>
+      </TeamData>
+    </MatchData>
+    <Team uID="t43">
+      <Country>England</Country>
+      <Name>Manchester City</Name>	  
+		<!-- Players Removed from Test -->				  
+      <TeamOfficial Type="Manager" uID="man257">
+        <PersonName>
+          <First>Manuel</First>
+          <Last>Pellegrini</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Team uID="t4">
+      <Country>England</Country>
+      <Name>Newcastle United</Name>
+		<!-- Players Removed from Test -->				  	  
+      <TeamOfficial Type="Manager" uID="man168">
+        <PersonName>
+          <First>Alan</First>
+          <Last>Pardew</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Venue uID="v2691">
+      <Country>England</Country>
+      <Name>Etihad Stadium</Name>
+    </Venue>
+  </SoccerDocument>
+</SoccerFeed>

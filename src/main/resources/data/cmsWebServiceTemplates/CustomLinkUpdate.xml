@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+    <article dbid="dbid">
+        <field name="name"></field>
+        <field name="customlinkpushnotificationtext"></field>
+        <field name="customlinkpushnotificationcb"></field>
+    </article>
+</io>

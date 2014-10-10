@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2013 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+	 SAMPLE - GOALS XML
+     produced on:        valde-jobq-a02.nexus.opta.net
+     production time:    20130817T142437,149Z
+     production module:  Opta::Feed::XML::Soccer::F7
+-->
+<SoccerFeed TimeStamp="20130817T152435+0100">
+  <SoccerDocument Type="Latest" uID="f695281">
+    <Competition uID="c8">
+      <Country>England</Country>
+      <Name>English Barclays Premier League</Name>
+      <Stat Type="season_id">2013</Stat>
+      <Stat Type="season_name">Season 2013/2014</Stat>
+      <Stat Type="symid">EN_PR</Stat>
+      <Stat Type="matchday">1</Stat>
+    </Competition>
+    <MatchData>
+      <MatchInfo MatchType="Regular" Period="FirstHalf" TimeStamp="20130817T150045+0100" Weather="Cloudy">
+        <Date>20130817T150000+0100</Date>
+      </MatchInfo>
+      <MatchOfficial uID="o40933">
+        <OfficialData>
+          <OfficialRef Type="Main" />
+        </OfficialData>
+        <OfficialName>
+          <First>Anthony</First>
+          <Last>Taylor</Last>
+        </OfficialName>
+      </MatchOfficial>
+      <AssistantOfficials>
+		<!-- Assistant Officials Removed from Test -->			  
+      </AssistantOfficials>
+      <Stat Type="match_time">24</Stat>
+      <TeamData Score="3" Side="Home" TeamRef="t3">
+        <Goal EventID="10285330029" EventNumber="163" Period="FirstHalf" PlayerRef="p44346" Time="6" TimeStamp="20140211T150559+0100" Type="Goal" uID="g3-1">
+        </Goal>
+        <PlayerLineUp>
+		<!-- Match Player Removed from Test -->		
+        </PlayerLineUp>
+      </TeamData>
+      <TeamData Score="1" Side="Away" TeamRef="t7">        
+        <PlayerLineUp>
+		<!-- Match Players Removed from Test -->
+        </PlayerLineUp>
+      </TeamData>
+    </MatchData>
+    <Team uID="t3">
+      <Country>England</Country>
+      <Name>Arsenal</Name>
+		<!-- Teams Players Removed from Test -->
+      <TeamOfficial Type="Manager" uID="man51">
+        <PersonName>
+          <First>Arsène</First>
+          <Last>Wenger</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Team uID="t7">
+      <Country>England</Country>
+      <Name>Aston Villa</Name>	  
+		<!-- Teams Players Removed from Test -->	  
+      <TeamOfficial Type="Manager" uID="man37630">
+        <PersonName>
+          <First>Paul</First>
+          <Last>Lambert</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Venue uID="v3250">
+      <Country>England</Country>
+      <Name>Emirates Stadium</Name>
+    </Venue>
+  </SoccerDocument>
+</SoccerFeed>
+
+

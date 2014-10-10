@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+    <article dbid="dbid">
+        <field name="liveMatchDescription"></field>
+        <field name="liveMatchPushnotificationText"></field>
+        <field name="liveMatchPushnotificationCb"></field>
+    </article>
+</io>

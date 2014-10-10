@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ 
+<project basedir="." default="runcukes" name="CukeTest">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../.m2/repository/info/cukes/cucumber-java/1.0.11/cucumber-java-1.0.11.jar"/>
+        <pathelement location="../../.m2/repository/info/cukes/cucumber-core/1.0.11/cucumber-core-1.0.11.jar"/>
+        <pathelement location="../../.m2/repository/info/cukes/gherkin/2.11.1/gherkin-2.11.1.jar"/>
+        <pathelement location="../../.m2/repository/info/cukes/cucumber-html/0.2.1/cucumber-html-0.2.1.jar"/>
+        <pathelement location="../../.m2/repository/info/cukes/cucumber-junit/1.0.11/cucumber-junit-1.0.11.jar"/>
+        <pathelement location="../../.m2/repository/junit/junit/4.10/junit-4.10.jar"/>
+        <pathelement location="../../.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.jar"/>
+        <pathelement location="../../.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"/>
+        <pathelement location="../../.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-java/2.39.0/selenium-java-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-android-driver/2.39.0/selenium-android-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.39.0/selenium-remote-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="../../.m2/repository/org/json/json/20080701/json-20080701.jar"/>
+        <pathelement location="../../.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.39.0/selenium-chrome-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.39.0/selenium-htmlunit-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/htmlunit/htmlunit/2.13/htmlunit-2.13.jar"/>
+        <pathelement location="../../.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar"/>
+        <pathelement location="../../.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar"/>
+        <pathelement location="../../.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.13/htmlunit-core-js-2.13.jar"/>
+        <pathelement location="../../.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="../../.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/cssparser/cssparser/0.9.11/cssparser-0.9.11.jar"/>
+        <pathelement location="../../.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.12.v20130726/jetty-websocket-8.1.12.v20130726.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-io/8.1.12.v20130726/jetty-io-8.1.12.v20130726.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-http/8.1.12.v20130726/jetty-http-8.1.12.v20130726.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.39.0/selenium-firefox-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.39.0/selenium-ie-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-iphone-driver/2.39.0/selenium-iphone-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.39.0/selenium-safari-driver-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-support/2.39.0/selenium-support-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0.jar"/>
+        <pathelement location="../../.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar"/>
+        <pathelement location="../../.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar"/>
+        <pathelement location="../../.m2/repository/com/jayway/restassured/rest-assured/1.5/rest-assured-1.5.jar"/>
+        <pathelement location="../../.m2/repository/org/codehaus/groovy/modules/http-builder/http-builder/0.5.1/http-builder-0.5.1.jar"/>
+        <pathelement location="../../.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar"/>
+        <pathelement location="../../.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar"/>
+        <pathelement location="../../.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar"/>
+        <pathelement location="../../.m2/repository/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar"/>
+        <pathelement location="../../.m2/repository/org/codehaus/groovy/groovy/1.7.11/groovy-1.7.11.jar"/>
+        <pathelement location="../../.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+        <pathelement location="../../.m2/repository/asm/asm/3.2/asm-3.2.jar"/>
+        <pathelement location="../../.m2/repository/asm/asm-commons/3.2/asm-commons-3.2.jar"/>
+        <pathelement location="../../.m2/repository/asm/asm-util/3.2/asm-util-3.2.jar"/>
+        <pathelement location="../../.m2/repository/asm/asm-analysis/3.2/asm-analysis-3.2.jar"/>
+        <pathelement location="../../.m2/repository/asm/asm-tree/3.2/asm-tree-3.2.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.9/nekohtml-1.9.9.jar"/>
+        <pathelement location="../../.m2/repository/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/httpcomponents/httpmime/4.1.2/httpmime-4.1.2.jar"/>
+        <pathelement location="../../.m2/repository/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar"/>
+    </path>
+    <path id="CukeTest.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <pathelement location="../../.m2/repository/com/google/http-client/google-http-client/1.11.0-beta/google-http-client-1.11.0-beta.jar"/>
+    </path>
+    <path id="run.CukeTest.classpath">
+        <path refid="CukeTest.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.java.classpath">
+        <path refid="CukeTest.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.JUnitCore.classpath">
+        <path refid="CukeTest.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.JVM.classpath">
+        <path refid="CukeTest.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.New_configuration.classpath">
+        <path refid="CukeTest.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.RunCukesTest.classpath">
+        <path refid="CukeTest.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+     
+
+	<target name="runcukes" >
+	        <mkdir dir="target/cucumber-junit-report"/>
+	        <java classname="cucumber.cli.Main" fork="true" failonerror="false" resultproperty="cucumber.exitstatus">
+	            <classpath refid="classpath"/>
+	            <arg value="--format"/>
+	            <arg value="junit:target/cucumber-junit-report/allcukes.xml"/>
+	            <arg value="--format"/>
+	            <arg value="pretty"/>
+	            <arg value="--format"/>
+	            <arg value="html:target/cucumber-html-report"/>
+	            <arg value="--glue"/>
+	            <arg value="com.newsuk.test.RunCukesTest"/>
+	            <arg value="src/test/resources"/>
+	        </java>
+
+	        <junitreport todir="target/cucumber-junit-report">
+	            <fileset dir="target/cucumber-junit-report">
+	                <include name="allcukes.xml"/>
+	            </fileset>
+	            <report format="frames" todir="target/cucumber-junit-report"/>
+	        </junitreport>
+
+	        <fail message="Cucumber failed">
+	            <condition>
+	                <not>
+	                    <equals arg1="${cucumber.exitstatus}" arg2="0"/>
+	                </not>
+	            </condition>
+	        </fail>
+	    </target>
+</project>

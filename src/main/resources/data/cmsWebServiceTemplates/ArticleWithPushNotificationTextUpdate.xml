@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+    <article dbid="dbid">
+        <field name="HEADLINE"></field>
+        <field name="STANDFIRST"></field>
+        <field name="BYLINEOVERRIDE"></field>
+        <field name="BYLINEDETAILS"></field>
+        <field name="timessportpushnotificationtext"></field>
+        <field name="timessportpushnotificationcb"></field>
+        <field name="BODY">
+            BODY
+        </field>
+    </article>
+</io>

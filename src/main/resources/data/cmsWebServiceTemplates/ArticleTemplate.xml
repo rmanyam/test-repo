@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+	<article source="WebserviceImport" sourceid="SOURCE_ID" type="standardArticle" state="TATE">
+		<section toDesk="desked" homeSection="true" name="SECTION_NAME" />
+		<field name="HEADLINE">HEADLINE</field>
+		<field name="STANDFIRST">STANDFIRST</field>
+		<field name="BYLINEOVERRIDE">BYLINEOVERRIDE</field>
+		<field name="BYLINEDETAILS">%%BYLINEDETAILS</field>
+		<field name="METHODEPUUID">%%METHODEPUUID</field>
+		<field name="BODY">
+			BODY
+		</field>
+	</article>
+</io>

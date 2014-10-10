@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2013 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a02.nexus.opta.net
+     production time:    20130817T172217,622Z
+     production module:  Opta::Feed::XML::Soccer::F7
+-->
+<SoccerFeed TimeStamp="20140210T182213+0100">
+  <SoccerDocument Type="Latest" uID="f694908">
+    <Competition uID="c8">
+      <Country>England</Country>
+      <Name>English Barclays Premier League</Name>
+      <Stat Type="season_id">2013</Stat>
+      <Stat Type="season_name">Season 2013/2014</Stat>
+      <Stat Type="symid">EN_PR</Stat>
+      <Stat Type="matchday">1</Stat>
+    </Competition>
+    <MatchData>
+      <MatchInfo MatchType="Regular" Period="FullTime" TimeStamp="20130817T181717+0100" Weather="Cloudy">
+        <Date>20130817T173000+0100</Date>
+      </MatchInfo>
+      <MatchOfficial uID="o10509">
+        <OfficialData>
+          <OfficialRef Type="Main" />
+        </OfficialData>
+        <OfficialName>
+          <First>Phil</First>
+          <Last>Dowd</Last>
+        </OfficialName>
+      </MatchOfficial>
+      <AssistantOfficials>
+      <!-- Removed from Test -->
+      </AssistantOfficials>
+      <Stat Type="match_time">48</Stat>
+      <TeamData Score="0" Side="Home" TeamRef="t80">
+        <Booking Card="Yellow" CardType="Yellow" EventID="929205885" EventNumber="131" Period="FirstHalf" PlayerRef="p86989" Reason="Foul" Time="3" TimeStamp="20130817T173234+0100" uID="b80-1" />
+        <PlayerLineUp>
+      <!-- Removed from Test -->         
+        </PlayerLineUp>
+      </TeamData>
+      <TeamData Score="2" Side="Away" TeamRef="t1">
+        <PlayerLineUp>
+      <!-- Removed from Test -->         		
+        </PlayerLineUp>
+      </TeamData>
+    </MatchData>
+    <Team uID="t80">
+      <Country>England</Country>
+      <Name>Swansea City</Name>	  
+		<!-- Players Removed from Test -->         
+      <TeamOfficial Type="Manager" uID="man37659">
+        <PersonName>
+          <First>Michael</First>
+          <Last>Laudrup</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Team uID="t1">
+      <Country>England</Country>
+      <Name>Manchester United</Name>
+		<!-- Players Removed from Test -->         	  
+      <TeamOfficial Type="Manager" uID="man85">
+        <PersonName>
+          <First>David</First>
+          <Last>Moyes</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Venue uID="v2867">
+      <Country>England</Country>
+      <Name>Liberty Stadium</Name>
+    </Venue>
+  </SoccerDocument>
+</SoccerFeed>
